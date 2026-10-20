@@ -1,5 +1,12 @@
 public class FirstFile {
+
+    private String message;
+
+    public FirstFile(String message) {
+        this.message = message;
+    }
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        FirstFile file = new FirstFile("Hello, World!");
+        System.out.println(file.message);
     }
 }
